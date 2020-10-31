@@ -1,0 +1,8 @@
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\bin\Debug\netcoreapp3.1\NathannJShop.Infraestrcture.deps.json
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\bin\Debug\netcoreapp3.1\NathannJShop.Infraestrcture.dll
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\obj\Debug\netcoreapp3.1\NathannJShop.Infraestrcture.csprojAssemblyReference.cache
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\obj\Debug\netcoreapp3.1\NathannJShop.Infraestrcture.AssemblyInfoInputs.cache
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\obj\Debug\netcoreapp3.1\NathannJShop.Infraestrcture.AssemblyInfo.cs
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\bin\Debug\netcoreapp3.1\NathannJShop.Infraestrcture.runtimeconfig.json
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\bin\Debug\netcoreapp3.1\NathannJShop.Infraestrcture.runtimeconfig.dev.json
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\obj\Debug\netcoreapp3.1\NathannJShop.Infraestrcture.genruntimeconfig.cache

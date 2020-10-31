@@ -1,0 +1,15 @@
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\bin\Release\netcoreapp3.1\NathannJShop.Infraestructure.deps.json
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\bin\Release\netcoreapp3.1\NathannJShop.Infraestructure.runtimeconfig.json
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\bin\Release\netcoreapp3.1\NathannJShop.Infraestructure.runtimeconfig.dev.json
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\bin\Release\netcoreapp3.1\NathannJShop.Infraestructure.dll
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\bin\Release\netcoreapp3.1\NathannJShop.Infraestructure.pdb
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\bin\Release\netcoreapp3.1\NathannJShop.Core.dll
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\bin\Release\netcoreapp3.1\NathannJShop.Core.pdb
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\obj\Release\netcoreapp3.1\NathannJShop.Infraestructure.csprojAssemblyReference.cache
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\obj\Release\netcoreapp3.1\NathannJShop.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\obj\Release\netcoreapp3.1\NathannJShop.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\obj\Release\netcoreapp3.1\NathannJShop.Infraestructure.AssemblyInfo.cs
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\obj\Release\netcoreapp3.1\NathannJShop.Infraestructure.csproj.CopyComplete
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\obj\Release\netcoreapp3.1\NathannJShop.Infraestructure.dll
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\obj\Release\netcoreapp3.1\NathannJShop.Infraestructure.pdb
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestrcture\obj\Release\netcoreapp3.1\NathannJShop.Infraestructure.genruntimeconfig.cache

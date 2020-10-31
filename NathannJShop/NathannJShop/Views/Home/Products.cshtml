@@ -1,0 +1,62 @@
+﻿@model NathannJShop.ViewModels.ProductoViewModel
+
+
+<h1> Productos</h1>
+<a asp-controller="home" asp-action="ShowProducts" class="btn btn-outline-primary">Ver Productos</a>
+
+<div class="alert alert-@ViewBag.alert" role="alert">
+    @ViewBag.Message
+</div>
+
+
+<form asp-controller="Home" asp-action="Products" method="post">
+    <div class="form-group">
+        <label asp-for="@Model.Producto.Nombre"></label>
+        <input asp-for="@Model.Producto.Nombre" type="text" class="form-control" id="nombre" placeholder="Digite el nombre del producto">
+        <span asp-validation-for="@Model.Producto.Nombre" class="text-danger"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Producto.Descripcion"></label>
+        <input asp-for="@Model.Producto.Descripcion" type="text" class="form-control" id="descripcion" placeholder="Digite la descripción del producto">
+        <span asp-validation-for="@Model.Producto.Descripcion" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Producto.CategoriaId">Categoria</label>
+        <select asp-for="@Model.Producto.CategoriaId" class="form-control">
+        
+            <option value="">Selecciona una opción</option>
+            @foreach (var item in Model.Categorias)
+            {
+                <option value="@item.CategoriaId">@item.Nombre</option>
+            }
+
+        </select>
+        <span asp-validation-for="@Model.Producto.CategoriaId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Producto.Marca"></label>
+        <input asp-for="@Model.Producto.Marca" type="text" class="form-control" id="Marca" placeholder="Digite la marca del producto">
+        <span asp-validation-for="@Model.Producto.Marca" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Producto.PromocionId">Promoción</label>
+        <select asp-for="@Model.Producto.PromocionId" class="form-control">
+            <option value="">Selecciona una opción</option>
+            @foreach (var item in Model.Promociones)
+            {
+                <option value="@item.PromocionId">@item.Nombre</option>
+            }
+
+        </select>
+        <span asp-validation-for="@Model.Producto.PromocionId" class="text-danger"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Producto.Precio">Precio</label>
+        <input asp-for="@Model.Producto.Precio" class="form-control" id="precio" placeholder="Digite el precio del producto">
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Crear Producto</button>
+</form>

@@ -1,0 +1,4 @@
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestructure\obj\Debug\netstandard2.0\NathannJShop.Migrations.csprojAssemblyReference.cache
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestructure\obj\Debug\netstandard2.0\NathannJShop.Migrations.csproj.CoreCompileInputs.cache
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestructure\obj\Debug\netstandard2.0\NathannJShop.Migrations.AssemblyInfoInputs.cache
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Infraestructure\obj\Debug\netstandard2.0\NathannJShop.Migrations.AssemblyInfo.cs

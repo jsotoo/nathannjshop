@@ -1,0 +1,9 @@
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Core\bin\Debug\netstandard2.0\NathannJShop.Core.deps.json
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Core\bin\Debug\netstandard2.0\NathannJShop.Core.dll
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Core\bin\Debug\netstandard2.0\NathannJShop.Core.pdb
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Core\obj\Debug\netstandard2.0\NathannJShop.Core.csprojAssemblyReference.cache
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Core\obj\Debug\netstandard2.0\NathannJShop.Core.AssemblyInfoInputs.cache
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Core\obj\Debug\netstandard2.0\NathannJShop.Core.AssemblyInfo.cs
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Core\obj\Debug\netstandard2.0\NathannJShop.Core.dll
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Core\obj\Debug\netstandard2.0\NathannJShop.Core.pdb
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.Core\obj\Debug\netstandard2.0\NathannJShop.Core.csproj.CoreCompileInputs.cache

@@ -1,0 +1,49 @@
+﻿@section css{
+    <link href="~/css/login.css" rel="stylesheet" />
+    <style>
+
+        #usuario {
+            text-align: center;
+            background-color: white;
+        }
+
+        #password{
+            text-align: center;
+            background-color: white;
+        }
+    </style>
+
+}
+
+<h1></h1>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+        <!-- Icon -->
+        <div class="fadeIn first">
+            <img src="~/images/user.png" alt="Usuario"/>
+        </div>
+
+        <!-- Login Form -->
+        <form>
+            <div class="form-group">
+
+                <label for="usuario" style="text-align:left;" >Usuario</label>
+                <input type="text" class="fadeIn second form-control" id="usuario"  placeholder="Digite el usuario">
+            </div>
+            <div class="form-group">
+                <label for="password" style="text-align:left;" >Contraseña</label>
+                <input type="password" class="fadeIn second form-control" id="password"  placeholder="Digite la contraseña" style="margin-left:50px; width:350px;" >
+            </div>
+
+            <input type="submit" class="fadeIn fourth">
+
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+            <a class="underlineHover" href="#">Olvidó su contraseña?</a>
+        </div>
+
+    </div>
+</div>

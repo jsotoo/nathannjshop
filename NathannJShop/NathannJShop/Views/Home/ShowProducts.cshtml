@@ -1,0 +1,253 @@
+﻿@model NathannJShop.ViewModels.ProductoViewModel
+
+@{ 
+   var productos = ViewBag.Products;
+}
+
+<h1> Lista de Productos</h1>
+<p>@ViewBag.eliminado</p>
+<p>@ViewBag.actualizado</p>
+
+<table class="table" id="table">
+    <thead>
+        <tr>
+            <th scope="col"> Id </th>
+            <th scope="col"> Nombre</th>
+            <th scope="col"> Descripción </th>
+            <th scope="col"> Marca </th>
+            <th scope="col"> Categoria </th>
+            <th scope="col"> Promoción </th>
+            <th scope="col"> Precio </th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+
+        @foreach (var item in productos)
+        {
+        <tr>
+            <td>@item.ProductoId</td>
+            <td>@item.Nombre</td>
+            <td>@item.Descripcion</td>
+            <td>@item.Marca</td>
+            <td>@item.Categoria.Nombre</td>
+            <td>@item.Promocion.Nombre</td>
+            <td>@item.Precio</td>
+            <td>
+                <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#editarProducto" onclick="getData()">
+                    Editar
+                </button>
+
+            </td>
+            <td>
+                <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#eliminarProducto" onclick="getDataEliminar()">
+                    Eliminar
+                </button>
+
+            </td>
+
+
+
+        </tr>
+        }
+
+    </tbody>
+
+</table>
+
+
+<div class="modal fade" id="editarProducto" tabindex="-1" role="dialog" aria-labelledby="editarProductoLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editarProductoLabel">Editar Producto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <form asp-controller="Home" asp-action="UpdateProduct" method="post">
+
+                    <div class="form-group">
+                        @*<label asp-for="@Model.Producto.ProductoId"></label>*@
+                        <input asp-for="@Model.Producto.ProductoId" type="hidden" class="form-control" id="productoId" >
+                        <span asp-validation-for="@Model.Producto.ProductoId" class="text-danger"></span>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label asp-for="@Model.Producto.Nombre"></label>
+                        <input asp-for="@Model.Producto.Nombre" type="text" class="form-control" id="nombre">
+                        <span asp-validation-for="@Model.Producto.Nombre" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="@Model.Producto.Descripcion"></label>
+                        <input asp-for="@Model.Producto.Descripcion" type="text" class="form-control" id="descripcion">
+                        <span asp-validation-for="@Model.Producto.Descripcion" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="@Model.Producto.Marca"></label>
+                        <input asp-for="@Model.Producto.Marca" type="text" class="form-control" id="marca">
+                        <span asp-validation-for="@Model.Producto.Marca" class="text-danger"></span>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label asp-for="@Model.Producto.CategoriaId">Categoria</label>
+                        <select asp-for="@Model.Producto.CategoriaId" class="form-control">
+                            <option>Selecciona una opción</option>
+                            @foreach (var item in Model.Categorias)
+                            {
+                                <option value="@item.CategoriaId">@item.Nombre</option>
+                            }
+
+                        </select>
+                        <span asp-validation-for="@Model.Producto.CategoriaId" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="@Model.Producto.PromocionId">Promoción</label>
+                        <select asp-for="@Model.Producto.PromocionId" class="form-control">
+                            <option>Selecciona una opción</option>
+                            @foreach (var item in Model.Promociones)
+                            {
+                                <option value="@item.PromocionId">@item.Nombre</option>
+                            }
+
+                        </select>
+                        <span asp-validation-for="@Model.Producto.PromocionId" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="@Model.Producto.Precio"></label>
+                        <input asp-for="@Model.Producto.Precio" type="number" class="form-control" id="prec">
+                        <span asp-validation-for="@Model.Producto.Precio" class="text-danger"></span>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary">Actualizar producto</button>
+                    </div>
+
+                </form>
+
+            </div>      
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="eliminarProducto" tabindex="-1" role="dialog" aria-labelledby="eliminarProductoLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="eliminarProductoLabel">Eliminar Producto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                Realmente quiere eliminar el producto?
+
+                <form asp-controller="Home" asp-action="DeleteProduct" method="post">
+
+                 
+
+                    <div class="form-group">
+
+                        Producto: <label asp-for="@Model.Producto.ProductoId" id="prodEliminar"></label>
+                        <input asp-for="@Model.Producto.ProductoId" type="hidden" id="prodId" class="form-control">
+                        <br>
+                        Nombre: <label asp-for="@Model.Producto.Nombre" id="nombreEliminar"></label>
+                        <br>
+                        Descripción:  <label asp-for="@Model.Producto.Descripcion" id="descripcionEliminar"></label>
+                        <br>
+                        Marca: <label asp-for="@Model.Producto.Marca" id="marcaEliminar"></label>
+                        <br>
+                        Categoría: <label asp-for="@Model.Producto.CategoriaId" id="categoriaEliminar"></label>
+
+                        <br>
+                        Promoción: <label asp-for="@Model.Producto.PromocionId" id="promocionEliminar"></label>
+                        <br />
+                        Precio: <label asp-for="@Model.Producto.Precio" id="precioEliminar"></label>
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-danger" >Eliminar producto</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+    var getData = function () {
+        var table = document.getElementById("table"), rIndex;
+
+        for (var i = 0; i < table.rows.length; i++) {
+            table.rows[i].onclick = function () {
+                rIndex = this.rowIndex;
+                document.getElementById("productoId").value = this.cells[0].innerHTML;
+                document.getElementById("nombre").value = this.cells[1].innerHTML;
+                document.getElementById("descripcion").value = this.cells[2].innerHTML;
+                document.getElementById("marca").value = this.cells[3].innerHTML;
+                document.getElementById("categoria").text = this.cells[4].innerHTML;
+                document.getElementById("promocion").text = this.cells[5].innerHTML;
+                document.getElementById("prec").value = this.cells[6].innerHTML;
+
+            }
+           
+
+        }
+
+
+        
+    }
+
+    var getDataEliminar = function () {
+        var table = document.getElementById("table"), rIndex;
+
+        for (var i = 0; i < table.rows.length; i++) {
+            table.rows[i].onclick = function () {
+                rIndex = this.rowIndex;
+                document.getElementById("prodEliminar").innerHTML = this.cells[0].innerHTML;
+                document.getElementById("prodId").value = this.cells[0].innerHTML;
+                document.getElementById("nombreEliminar").innerHTML = this.cells[1].innerHTML;
+                document.getElementById("descripcionEliminar").innerHTML = this.cells[2].innerHTML;
+                document.getElementById("marcaEliminar").innerHTML = this.cells[3].innerHTML;
+                document.getElementById("categoriaEliminar").innerHTML = this.cells[4].innerHTML;
+                document.getElementById("promocionEliminar").innerHTML = this.cells[5].innerHTML;
+                document.getElementById("precioEliminar").innerHTML = this.cells[6].innerHTML;
+
+            }
+
+
+        }
+
+
+
+    }
+
+
+
+
+
+</script>

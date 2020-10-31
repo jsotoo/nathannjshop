@@ -1,0 +1,9 @@
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.API\bin\Debug\netstandard2.0\NathannJShop.API.deps.json
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.API\bin\Debug\netstandard2.0\NathannJShop.API.dll
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.API\bin\Debug\netstandard2.0\NathannJShop.API.pdb
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.API\obj\Debug\netstandard2.0\NathannJShop.API.csprojAssemblyReference.cache
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.API\obj\Debug\netstandard2.0\NathannJShop.API.csproj.CoreCompileInputs.cache
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.API\obj\Debug\netstandard2.0\NathannJShop.API.AssemblyInfoInputs.cache
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.API\obj\Debug\netstandard2.0\NathannJShop.API.AssemblyInfo.cs
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.API\obj\Debug\netstandard2.0\NathannJShop.API.dll
+C:\Users\JONATHAN\Desktop\Proyectos Visual 2019\NathannJShop\NathannJShop\NathannJShop.API\obj\Debug\netstandard2.0\NathannJShop.API.pdb
